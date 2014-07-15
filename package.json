@@ -1,0 +1,26 @@
+{
+  "name": "video-tools",
+  "version": "0.0.0",
+  "description": "Lib to handle film & serie & anime filename",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --require test/support/env -R min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gerchardon/video-tools.git"
+  },
+  "author": "Gerome Chardon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gerchardon/video-tools/issues"
+  },
+  "homepage": "https://github.com/gerchardon/video-tools",
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "should": "^4.0.4"
+  }
+}
