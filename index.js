@@ -46,6 +46,11 @@ var REGS = [{
 var EXTS = [ /\.mp4$/, /\.avi$/, /\.mkv$/, /\.mov$/ ];
 var SUB_EXTS = [ '.srt', '.eng.srt'];
 
+/**
+ * Name without extension.
+ * @param {string} name Filename to extract.
+ * @return {string} Filename without extension.
+ */
 exports.nameWithoutExtension = function (name) {
     for(var i=0; i < EXTS.length; i++) {
         if(name.match(EXTS[i])){
@@ -55,6 +60,11 @@ exports.nameWithoutExtension = function (name) {
     return name;
 };
 
+/**
+ * True if is a Serie.
+ * @param {string} name Filename to test.
+ * @return {boolean}
+ */
 exports.isSerie = function (name) {
   var temp = exports.info(name);
   if (temp !== null) {
@@ -62,6 +72,7 @@ exports.isSerie = function (name) {
   }
   return false;
 };
+
 exports.isAnime = function (name) {
   var temp = exports.info(name);
   if (temp !== null) {
