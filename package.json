@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --require test/support/env -R min"
+    "test": "mocha --require test/support/env -R spec"
   },
   "repository": {
     "type": "git",
